@@ -14,13 +14,13 @@ function guessTheNumber(x) {
       alert("Игра окончена!");
     } else if (!isNumber(guess)) {
       alert("Введите число");
-      guessTheNumber(x);
+      quesstion();
     } else if (+guess > x) {
       alert("Загаданное число меньше, попробуй еще раз!");
-      guessTheNumber(x);
+      quesstion();
     } else if (+guess < x) {
       alert("Загаданное число больше, попробуй еще раз!");
-      guessTheNumber(x);
+      quesstion();
     } else if (+guess === x) {
       alert("Поздравляю, Вы угадали!");
     }
