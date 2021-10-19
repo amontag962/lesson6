@@ -14,19 +14,18 @@ function guessTheNumber(x) {
       alert("Игра окончена!");
     } else if (!isNumber(guess)) {
       alert("Введите число");
-      guessTheNumber();
+      guessTheNumber(x);
     } else if (+guess > x) {
       alert("Загаданное число меньше, попробуй еще раз!");
-      guessTheNumber();
+      guessTheNumber(x);
     } else if (+guess < x) {
       alert("Загаданное число больше, попробуй еще раз!");
-      guessTheNumber();
+      guessTheNumber(x);
     } else if (+guess === x) {
       alert("Поздравляю, Вы угадали!");
     }
-    console.dir(quesstion);
   }
   quesstion();
 }
 
-guessTheNumber(3);
+guessTheNumber(5);
