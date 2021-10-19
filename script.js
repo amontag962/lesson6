@@ -7,9 +7,8 @@ const isNumber = function (num) {
 
 // ------------------Игра "Угадай число"------------------
 
-function guessTheNumber() {
+function guessTheNumber(num) {
   let guess = prompt("Угадай число которое я загадал");
-  let num = 20;
   if (guess === null) {
     alert("Игра окончена!");
   } else if (!isNumber(guess)) {
@@ -26,4 +25,4 @@ function guessTheNumber() {
   }
 }
 
-guessTheNumber();
+guessTheNumber(20);
